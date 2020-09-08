@@ -1,0 +1,107 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #1b1b1b, #4d4d4d);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialmedia {
+    font-size: 160%;
+    width: 12%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.fa-instagram{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+}
+
+.fa-facebook {
+    color: #0879EA;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.logo {
+    height: 75px;
+}
+
+.logo:hover {
+    height: 85px;
+    transition: .8s;
+}
+
+.live {
+    border-radius: 8px;
+    width: 85px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ECECEC;
+}
+
+nav i {
+    color: #5c5c5c;
+    font-size: xx-large;
+    padding: 0 10px;
+}
+
+nav img {
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    color: #000000;
+}
+
+nav a:hover {
+    color:  #314ce2;
+    border-radius: 10px;
+}
+
+.container {
+    margin: 2% 5%;
+    padding-bottom: 1900px;
+    border: 1px solid gray;
+}
+
+.noticia1 {
+    width: 33%;
+    background-image: url();
+}
+.noticia2 {
+    background-image: url();
+    width: 33%;
+    
+}

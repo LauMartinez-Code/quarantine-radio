@@ -1,0 +1,21 @@
+.link2{
+    border-bottom: 2px solid #2608e9;
+    border-radius: 10px;
+    background-color: #cac8c8;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid black;
+}
+
+.colums1-3 {
+    border-right: 2px solid black;
+}

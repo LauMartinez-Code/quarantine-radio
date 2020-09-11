@@ -18,4 +18,6 @@ Desde esta página debe presentarse un enlace al formulario y otro a la página 
 Al presionar el botón "*Enviar*" <u>debe verificarse</u> que el número del programa, el nombre del cliente y el nombre de la canción estén todos ingresados. Si se cumple debe mostrarse de alguna forma el texto "**Gracias *NOMBRE*, pediste la canción *CANCION***", reemplazando NOMBRE y CANCION por lo que haya ingresado el usuario. En caso de error presentar un alert
 con un mensaje al respecto.
 
-Cada página debe contener enlaces para llegar a las otras dos.
+Adicionalmente incluye una pagina extra para ver la transmisión de alguna radio en vivo.
+
+Cada página debe contener enlaces para llegar a las demas.

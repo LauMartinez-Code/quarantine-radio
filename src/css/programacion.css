@@ -1,0 +1,33 @@
+.link2 {
+    border-bottom: 2px solid #2608e9;
+    border-radius: 10px;
+    background-color: #cac8c8;
+}
+
+.container {
+    border: 0px;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+th {
+    border-top: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+}
+
+td {
+    border-top: 1px solid #dee2e6;
+}
+
+footer {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0px;
+}

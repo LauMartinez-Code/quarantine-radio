@@ -1,0 +1,50 @@
+header{
+    position: relative;
+}
+
+.container {
+    border: 0px;
+}
+
+#onAir {
+    display: block;
+    margin: auto;
+    height: 50px;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 1600px) {  
+
+    iframe {
+        height: 600px;
+    }
+}
+
+@media(max-width: 900px) {  
+
+    iframe {
+        height: 500px;
+    }
+}
+
+@media(max-width: 600px) {  
+
+    iframe {
+        height: 350px;
+    }
+
+    img {
+        height: 30px;
+    }
+} 
+
+@media(max-width: 400px) {  
+
+    iframe {
+        height: 250px;
+    }
+} 

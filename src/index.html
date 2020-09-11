@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/general.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="shortcut icon" href="../resources/icons/index.svg" type="image/x-icon">
+        <title>Home - Quarantine Radio</title>
+    </head>
+    <body onload="getDate()">
+        <header>
+
+            <div class="socialmedia" >
+                <a href="https://www.instagram.com/quarantineradio.official/" 
+                    target="_blank" 
+                    title="Ir al Instagram de Quarantine Radio">
+                    <i class="fab fa-instagram "></i>
+                </a>
+                <a href="https://www.facebook.com/livequarantineradio/" 
+                    target="_blank" 
+                    title="Ir al Facebook de Quarantine Radio">
+                    <i class="fab fa-facebook "></i>
+                </a>
+                <a href="https://twitter.com/QuarvntineRadio" 
+                    target="_blank"
+                    title="Ir al Twitter de Quarantine Radio">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC6Ejtv7pdXTqbxAxfFENjJQ" 
+                    target="_blank"
+                    title="Ir al canal de Quarantine Radio">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            
+            <a href="./index.html">
+                <img class="logo" src="../resources/img/logo.png" alt="radio Logo" >
+            </a>
+
+            <a href="./live.html#transmision">
+                <img class="live" src="../resources/img/live.jpg" alt="ver transmisión en vivo" title="Ver transmisión en vivo">
+            </a>
+        </header>
+        <nav>
+            <i class="fas fa-home"></i>
+            <a class="link1" href="./index.html">Home</a></li>
+            <a class="link2" href="./programacion.html">Programación</a>
+            <a class="link3" href="./pedidos.html">Pedí tu canción</a>
+        </nav>
+
+        <div class="container">
+            <section class="principal">
+                <div class="programa1">
+                    <img src="../resources/img/principal.jpg" alt="albertito">
+                    <h4>Mañanas en cuarentena</h4>
+                    <p>Pedile un tema al capitan Beto</p>
+                    <a class="card-button" href="./pedidos.html#form">Pedir tema</a>
+                    <small>Desde las 06:00hs hasta las 10:00hs</small>
+                </div>
+                <aside class="noticias">
+                    <article class="noticia1" >
+                        <a href="https://weather.com/es-AR/tiempo/hoy/l/-31.30,-64.27" target="_blank">
+                            <img src="../resources/img/climaCba.jpg" alt="imagen de fondo de la catedral de Cordoba">
+                            <p id="clima">Clima: pronóstico del tiempo para este</p>
+                        </a>
+                    </article>
+                    <article class="noticia2" >
+                        <a href="https://www.dolarhoy.com/" target="_blank">
+                            <img src="../resources/img/dolar.jpg" alt="dolares">
+                            <p id="dolar">Dólar hoy: a cuánto cotiza este</p>
+                        </a>
+                    </article>
+                </aside>
+            </section>
+
+            <section class="secundario">
+                <div class="programa2">
+                    <div class="ajuste">
+                        <img src="../resources/img/Fort.jpg" alt="Ficardo Fort">
+                    </div>
+                    <h4>Momento Maimeeeeee</h4>
+                    <p>Todo lo que te perdiste sobre el cantando anoche</p>
+                    <a class="card-button" href="./pedidos.html">Pedir tema</a>
+                    <small>Desde las 10:00hs hasta las 13:00hs</small>
+                </div>
+                <div class="programa3">
+                    <div class="ajuste">
+                        <img src="../resources/img/locutor1.jpg" alt="locutora">
+                    </div>
+                    <h4>Rock & Pop</h4>
+                    <p>Nacionales tienen prioridad</p>
+                    <a class="card-button" href="./pedidos.html">Pedir tema</a>
+                    <small>Desde las 13:00hs hasta las 16:00hs</small>
+                </div>
+                <div class="programa4">
+                    <div class="ajuste">
+                        <img src="../resources/img/locutor2.jpg" alt="señora locutora">
+                    </div>
+                    <h4>Bailate un Techno</h4>
+                    <p>La señora tira unos mix que dan calambre</p>
+                    <a class="card-button" href="./pedidos.html">Pedir tema</a>
+                    <small>Desde las 16:00hs hasta las 20:00hs</small>
+                </div>
+            </section>
+            
+        </div>
+        
+        <footer>
+            <p>
+                Argentina © 2010 / 2020 Radio Quarantine S.A. Todos los derechos reservados.
+            </p>
+        </footer>
+
+        <script>
+            function getDate() {
+                let clima = document.getElementById('clima');
+                let dolar = document.getElementById('dolar');
+                
+                var options = { weekday: 'long', month: 'long', day: 'numeric' };
+
+                let date = new Date().toLocaleString('es', options);
+
+                clima.innerText += ' ' + date;
+                dolar.innerText += ' ' + date;
+            }
+            
+        </script>
+    </body>
+</html>

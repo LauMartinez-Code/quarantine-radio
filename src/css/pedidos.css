@@ -1,0 +1,211 @@
+.link3{
+    border-bottom: 2px solid #2608e9;
+    border-radius: 10px;
+    background-color: #cac8c8;
+}
+
+.container {
+    border: 0px;
+}
+
+h1, input, label, small, dialog, form{
+    text-align: center;
+}
+
+#dj {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+form {
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; 
+}
+
+label {
+    font-weight: bold;
+}
+
+.fullname {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.fullname * {
+    box-sizing: border-box;
+    width: 48%;
+}
+
+.fullname div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.fullname div * {
+    width: 100%;
+}
+
+input, select {
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+
+select {
+    margin: 0;
+    text-align-last: center;
+}
+
+input:focus {
+    border: 5px solid rgba(68, 211, 255, 0.76);
+}
+
+small + small {
+    margin-bottom: 10px;
+}
+
+small a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+button {
+    margin-top: 10px;
+    border: transparent;
+    width: 20%;
+    height: 35px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+dialog {
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, .3);
+    background: #f0f0f0;
+    border-radius: 5px;
+    border-color: rgb(85, 0, 182);
+    padding-left: 20px;
+    width: 35%;
+    transition: .5s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+dialog.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+dialog.active h2 {
+    opacity: 0;
+    animation: entradaTitulo .8s ease .5s forwards;
+    margin-top: 0;
+}
+
+@keyframes entradaTitulo {
+    from {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+dialog.active p {
+    opacity: 0;
+    animation: entradaTexto .8s ease .5s forwards;
+}
+
+@keyframes entradaTexto {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+dialog.active #go-live {
+    opacity: 0;
+    animation: entradaAnchor 1s ease 1s forwards;
+}
+
+@keyframes entradaAnchor {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#go-live {
+    display: block;
+    margin: 10px auto 0;
+    width: 60%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnCerrarDialog {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3s ease all;
+}
+
+.btnCerrarDialog:hover {
+    color: #000;
+}
+
+.fa-info-circle {
+    color: #721c24;
+    display: inline;
+}
+
+.error {
+    padding: 2px 5px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border-radius: 4px;
+    display: none;
+}

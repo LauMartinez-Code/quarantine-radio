@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/general.css">
+        <link rel="stylesheet" href="./css/pedidos.css">
+        <link rel="shortcut icon" href="../resources/icons/pedidos.svg" type="image/x-icon">
+        <title>Pedir canción</title>
+    </head>
+    <body>
+        <header>
+
+            <div class="socialmedia" >
+                <a href="https://www.instagram.com/quarantineradio.official/" 
+                    target="_blank" 
+                    title="Ir al Instagram de Quarantine Radio">
+                    <i class="fab fa-instagram "></i>
+                </a>
+                <a href="https://www.facebook.com/livequarantineradio/" 
+                    target="_blank" 
+                    title="Ir al Facebook de Quarantine Radio">
+                    <i class="fab fa-facebook "></i>
+                </a>
+                <a href="https://twitter.com/QuarvntineRadio" 
+                    target="_blank"
+                    title="Ir al Twitter de Quarantine Radio">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC6Ejtv7pdXTqbxAxfFENjJQ" 
+                    target="_blank"
+                    title="Ir al canal de Quarantine Radio">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <a href="./index.html">
+                <img class="logo" src="../resources/img/logo.png" alt="radio Logo" >
+            </a>
+
+            <a href="./live.html#transmision">
+                <img class="live" src="../resources/img/live.jpg" alt="ver transmisión en vivo" title="Ver transmisión en vivo">
+            </a>
+        </header>
+        <nav>
+            <img src="../resources/icons/sending.svg" alt="" >
+            <a class="link1" href="./index.html">Home</a></li>
+            <a class="link2" href="./programacion.html">Programación</a>
+            <a class="link3" href="./pedidos.html">Pedí tu canción</a>
+        </nav>
+        
+        <div class="container">
+
+            <h1>Completá los datos y pedí tu tema!</h1>
+
+            <img id="dj" src="../resources/img/pedirTema.jpg" alt="dj background">
+
+            <form id="form" novalidate>
+                
+                <div class="fullname">
+                    <div>
+                        <label for="txtName">Nombre:</label>
+                        <input type="text" id="txtName" placeholder="Ingrese su nombre" required>
+                        <small class="error">
+                            <i class="fas fa-info-circle"></i>
+                            Complete este campo
+                        </small>                  
+                    </div>
+                    <div>
+                        <label for="txtSurname">Apellido:</label>
+                        <input type="text" id="txtSurname" placeholder="Ingrese su apellido" required>                            
+                        <small class="error">
+                            <i class="fas fa-info-circle"></i>
+                            Complete este campo
+                        </small>                  
+                    </div>
+                </div>
+
+                <label for="txtTel">Teléfono:</label>
+                <input type="tel" id="txtTel" 
+                    placeholder="Ingrese su número de teléfono" 
+                    pattern="[0-9]+" 
+                    required
+                >
+                <small class="error">
+                    <i class="fas fa-info-circle"></i>
+                    Complete este campo ingresando unicamente números
+                </small>                  
+
+
+                <label for="cboProgramas">Número de Programa:</label>
+                <select id="cboProgramas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <small>Seleccione el número de programa al que quiere pedir la canción.</small>
+                <small>Si no está seguro del Nº de programa puede consultarlos 
+                    <a href="./programacion.html" target="_blank" tabindex="-1">👉 aquí 👈</a>
+                </small>
+
+                <label for="txtSong">Canción:</label>
+                <input type="text" id="txtSong" placeholder="Ingrese nombre de la canción" required>
+                <small class="error">
+                    <i class="fas fa-info-circle"></i>
+                    Complete este campo
+                </small>                  
+
+                <button id="btnSubmit" class="card-button" onclick="validateFields();" >Enviar!</button>
+            </form>
+
+            <div id="overlay" class="overlay">
+                <dialog id="Success" open>
+                    <i class="fas fa-times btnCerrarDialog"></i>
+                    <h2>Pediste tu cancion!</h2>
+                    <p id="message"></p>
+                    <p>En los proximos minutos estará sonando <span id="song"></span> 😉</p>
+    
+                    <a id="go-live" class="card-button" href="./live.html">Ir a la radio en vivo</a>
+                </dialog>
+            </div>
+
+        </div>
+        
+        <footer>
+            <p>
+                Argentina © 2010 / 2020 Radio Quarantine S.A. Todos los derechos reservados.
+            </p>
+        </footer>
+
+        <script src="pedidos.js"></script>
+    </body>
+</html>

@@ -23,10 +23,11 @@ h4 {
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25em;
     position: relative;
+    flex: 1 1 auto;
 }
 
 .programa1 {
-    width: 58%;
+    width: 57%;
 }
 
 .programa2, .programa3, .programa4 {

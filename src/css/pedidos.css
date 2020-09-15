@@ -55,12 +55,7 @@ label {
 
 input, select {
     width: 50%;
-    border-radius: 5px;
     margin-bottom: 10px;
-    padding: 6px 12px;
-    color: #495057;
-    background-color: #fff;
-    border: 1px solid #ced4da;
 }
 
 select {
@@ -68,28 +63,19 @@ select {
     text-align-last: center;
 }
 
-input:focus {
-    border: 5px solid rgba(68, 211, 255, 0.76);
-}
 
 small + small {
     margin-bottom: 10px;
 }
 
 small a {
-    text-decoration: none;
     color: royalblue;
 }
 
 button {
     margin-top: 10px;
-    border: transparent;
     width: 20%;
     height: 35px;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 .overlay {

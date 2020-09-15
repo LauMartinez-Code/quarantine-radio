@@ -48,7 +48,7 @@
                 <img class="live" src="../resources/img/live.jpg" alt="ver transmisión en vivo" title="Ver transmisión en vivo">
             </a>
         </header>
-        <nav>
+        <nav class="mt-1">
             <ul class="nav nav-tabs">
                 <li>
                     <img src="../resources/icons/sending.svg" alt="sending logo">
@@ -61,6 +61,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="./pedidos.html">Pedí tu canción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./concursos.html">Concursos</a>
                 </li>
             </ul>
         </nav>
@@ -76,7 +79,7 @@
                 <div class="fullname">
                     <div>
                         <label for="txtName">Nombre:</label>
-                        <input type="text" id="txtName" placeholder="Ingrese su nombre" required>
+                        <input type="text" id="txtName"  class="form-control" placeholder="Ingrese su nombre" required>
                         <small class="error">
                             <i class="fas fa-info-circle"></i>
                             Complete este campo
@@ -84,7 +87,7 @@
                     </div>
                     <div>
                         <label for="txtSurname">Apellido:</label>
-                        <input type="text" id="txtSurname" placeholder="Ingrese su apellido" required>                            
+                        <input type="text" id="txtSurname" class="form-control" placeholder="Ingrese su apellido" required>                            
                         <small class="error">
                             <i class="fas fa-info-circle"></i>
                             Complete este campo
@@ -94,6 +97,7 @@
 
                 <label for="txtTel">Teléfono:</label>
                 <input type="tel" id="txtTel" 
+                    class="form-control w-50"
                     placeholder="Ingrese su número de teléfono" 
                     pattern="[0-9]+" 
                     required
@@ -105,7 +109,7 @@
 
 
                 <label for="cboProgramas">Número de Programa:</label>
-                <select id="cboProgramas">
+                <select id="cboProgramas" class="form-control w-50" aria-describedby="comboHelp">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -117,19 +121,21 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </select>
-                <small>Seleccione el número de programa al que quiere pedir la canción.</small>
-                <small>Si no está seguro del Nº de programa puede consultarlos 
-                    <a href="./programacion.html" target="_blank" tabindex="-1">👉 aquí 👈</a>
+                <small id="comboHelp" class="form-text text-muted">
+                    Seleccione el número de programa al que quiere pedir la canción.
+                    <br>
+                    Si no está seguro del Nº de programa puede consultarlos 👉
+                    <a href="./programacion.html" target="_blank" tabindex="-1"> aquí </a>👈
                 </small>
 
                 <label for="txtSong">Canción:</label>
-                <input type="text" id="txtSong" placeholder="Ingrese nombre de la canción" required>
+                <input type="text" id="txtSong" class="form-control w-50" placeholder="Ingrese nombre de la canción" required>
                 <small class="error">
                     <i class="fas fa-info-circle"></i>
                     Complete este campo
                 </small>                  
 
-                <button id="btnSubmit" class="card-button" onclick="validateFields();" >Enviar!</button>
+                <button id="btnSubmit" class="btn btn-primary" onclick="validateFields();" >Enviar!</button>
             </form>
 
             <div id="overlay" class="overlay">
@@ -139,7 +145,7 @@
                     <p id="message"></p>
                     <p>En los proximos minutos estará sonando <span id="song"></span> 😉</p>
     
-                    <a id="go-live" class="card-button" href="./live.html">Ir a la radio en vivo</a>
+                    <a id="go-live" class="btn btn-primary" role="button" aria-pressed="true" href="./live.html">Ir a la radio en vivo</a>
                 </dialog>
             </div>
 
@@ -151,9 +157,9 @@
             </p>
         </footer>
 
-        <script src="pedidos.js"></script>
+        <script src="./js/pedidos.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>

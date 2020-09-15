@@ -10,13 +10,12 @@ h4 {
 }
 
 /* .principal, */
-.secundario {
+/* .secundario { */
     /* width: 100%; */
     /* display: flex; */
     /* flex-flow: row wrap; */
     /* justify-content: flex-start; */
     /* flex: 1 1 auto;  */
-} 
 
 .programa1, .programa2, .programa3, .programa4 {
     margin: 15px;
@@ -52,16 +51,11 @@ h4 {
 .small-footer {
     width: 100%;
     color: #6c757d;
-    /* margin-top: 20px; */
     padding: 12px 20px;
     box-sizing: border-box;
     background-color: #F7F7F7;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25em;
-    /* display: block; */
-    /* position: absolute;
-    bottom: 0px;
-    left: 0px; */
 }
 
 /* 

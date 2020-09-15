@@ -39,14 +39,6 @@ div > img {
   height: auto;
 }
 
-.card-button {
-    padding: 6px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    background-color: #007BFF;
-}
-
 small {
     color: #6c757d;
     margin-top: 20px;

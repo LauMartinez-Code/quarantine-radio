@@ -21,3 +21,11 @@ con un mensaje al respecto.
 Adicionalmente incluye una pagina extra para ver la transmisión de alguna radio en vivo.
 
 Cada página debe contener enlaces para llegar a las demas.
+
+En este branch el sitio debe ser responsive y utilizar Bootstrap.  
+Ademas con la finalidad de interactuar con el usuario, y utilizar javascript, se agrega en el sitio web una adivinanza con hasta 4 intentos.  
+**El apartado de adivinanza, deberá:**
+- Contener un cuadro texto y un botón.
+- Facilitar al usuario 2 pistas si el usuario no acierta en el intento 2 y 3.  
+- Informar en todo momento al usuario el nro intentos que le quedan.  
+- Informar el resultado final (si acierta o si perdió los 4 intentos).

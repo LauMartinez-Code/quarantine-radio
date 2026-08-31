@@ -1,0 +1,28 @@
+h3 + img { /* img del post */
+    display: block;
+    margin: 5px auto;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.fa-info-circle {
+    font-size: x-large;
+}
+
+#adivinando, .help {
+    display: none;
+}
+
+.form-control:valid.incorrect {
+    border-color: #ffc107;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url(../../resources/icons/alert.svg);
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.form-control:valid.incorrect:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(220, 176, 53, 0.25);
+}

@@ -4,25 +4,13 @@
     background-color: #cac8c8;
 }
 
-.container {
+/* .container {
     border: 0px;
 }
+*/
 
-table {
-    width: 100%;
-    margin: auto;
+table, h1 {
     text-align: center;
-    color: #212529;
-    border-collapse: collapse;
-}
-
-th {
-    border-top: 2px solid #dee2e6;
-    border-bottom: 2px solid #dee2e6;
-}
-
-td {
-    border-top: 1px solid #dee2e6;
 }
 
 footer {

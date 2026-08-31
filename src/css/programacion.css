@@ -14,8 +14,5 @@ table, h1 {
 }
 
 footer {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    bottom: 0px;
+    margin-top: 65px;
 }
